@@ -59,7 +59,7 @@ defmodule BetterstackLogger.HttpBackend do
         msg =
           "#{__MODULE__} v#{Application.spec(@app, :vsn)} resetting #{count} log events in flight. If this continues please submit an issue."
 
-        log_after(:warn, msg)
+        log_after(:warning, msg)
       end
     end
 

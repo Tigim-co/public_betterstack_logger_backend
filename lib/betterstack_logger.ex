@@ -11,8 +11,8 @@ defmodule BetterstackLogger do
     log(:info, message, metadata)
   end
 
-  def warn(message, metadata \\ []) do
-    log(:warn, message, metadata)
+  def warning(message, metadata \\ []) do
+    log(:warning, message, metadata)
   end
 
   def error(message, metadata \\ []) do
